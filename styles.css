@@ -1,0 +1,227 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #333; 
+    padding: 20px;
+}
+
+
+.profile-photo {
+    width: 175px; 
+    height: 175px; 
+    border-radius: 50%; 
+    margin-right: 30px; 
+    object-fit: cover; 
+}
+
+
+.header-info {
+    flex: 1; 
+    text-align: center;
+    margin-right: 50px; 
+}
+
+h1 {
+    font-size: 32px; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 16px; 
+    margin-bottom: 5px;
+}
+
+
+.social-links a {
+    text-decoration: none;
+    color: #0077B5; 
+    margin-right: 10px;
+    font-size: 18px; 
+}
+
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+.resume-section {
+    display: flex;
+    background-color: #f2f2f2; 
+    padding: 20px; 
+    border-left: 4px solid #0077B5; 
+    margin-bottom: 20px; 
+}
+
+
+.resume-section .left-column {
+    flex: 40%; 
+    padding: 0 10px; 
+}
+
+.resume-section .right-column {
+    flex: 60%; 
+    padding: 0 10px;
+}
+
+
+.resume-section h2 {
+    font-size: 24px; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+
+.resume-section ul,
+.resume-section .education-item,
+.resume-section .work-experience-item,
+.resume-section .project-item {
+    font-size: 16px;
+    color: #555; 
+    line-height: 1.5; 
+    margin-bottom: 10px; 
+}
+
+
+.resume-section .skills-list .highlight {
+    font-weight: bold; 
+    color: #0077B5; 
+}
+
+
+.resume-section .work-experience-item,
+.resume-section .project-item {
+    padding-left: 20px; 
+    position: relative; 
+}
+
+/
+.resume-section .work-experience-item::before,
+.resume-section .project-item::before {
+    content: "\2022"; 
+    position: absolute;
+    left: 0;
+    color: #0077B5; 
+}
+
+
+.resume-section .project-item {
+    border-left: 2px solid #0077B5; 
+    padding-left: 20px; 
+    margin-bottom: 20px; 
+}
+
+
+.resume-section .project-item h3 {
+    font-size: 20px; 
+    color: #333; 
+    margin-bottom: 5px; 
+}
+
+
+.resume-section .project-item p {
+    font-size: 16px; 
+    color: #555; 
+    margin: 5px 0; 
+}
+
+
+.resume-section .project-item ul {
+    font-size: 16px; 
+    color: #555; 
+    list-style: disc; 
+    margin-left: 20px;
+}
+
+
+.resume-section .project-item a {
+    color: #0077B5; 
+    text-decoration: none; 
+    font-size: 16px; 
+}
+
+
+.resume-section .project-item a:hover {
+    text-decoration: underline; 
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .resume-section {
+        flex-direction: column; 
+    }
+
+    .resume-section .left-column,
+    .resume-section .right-column {
+        flex: 100%; 
+        padding: 0; 
+    }
+
+    .profile-photo {
+        margin: 0 auto; 
+        margin-bottom: 20px; 
+    }
+
+    .header-info {
+        margin: 0; 
+        text-align: center;
+    }
+
+   
+    h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .social-links a {
+        font-size: 16px;
+    }
+
+    .resume-section h2 {
+        font-size: 20px;
+    }
+
+    .resume-section ul,
+    .resume-section .education-item,
+    .resume-section .work-experience-item,
+    .resume-section .project-item {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    
+    .resume-section .project-item {
+        border-left: none; 
+        padding-left: 0; 
+        margin-bottom: 15px; 
+    }
+
+   
+    .resume-section .work-experience-item::before,
+    .resume-section .project-item::before {
+        content: "\2022"; 
+        position: absolute;
+        left: -15px; 
+    }
+}

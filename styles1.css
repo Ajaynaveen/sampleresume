@@ -1,0 +1,82 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color for the whole page */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style the main article section */
+.main-article {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+.main-article h2 {
+    font-size: 24px;
+}
+
+/* Style the secondary article section */
+.secondary-articles {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+.secondary-articles h3 {
+    font-size: 20px;
+}
+
+/* Style the editorial section */
+aside {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+aside h2 {
+    font-size: 24px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
